@@ -86,7 +86,7 @@ async function onConnect() {
 
 
 async function fetchAccountData() {
-
+  document.querySelector("#buttonConnect").style.display = "none";
   const networks = { "0x38": "BSC Mainnet", "0x61": "BSC Testnet" };
   // Get connected chain id from Ethereum node
   const chainId = await window.ethereum.request({ method: "eth_chainId" });
